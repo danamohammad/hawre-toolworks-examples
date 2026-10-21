@@ -1,0 +1,47 @@
+[
+  {
+    "name": "JSON Repair with Change Log",
+    "slug": "json-repair",
+    "approved_listing_id": "13990",
+    "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/json-repair",
+    "price_per_successful_call": "0.01",
+    "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+  },
+  {
+    "name": "OpenAPI to MCP Tool Defs",
+    "slug": "openapi-to-mcp-tools",
+    "approved_listing_id": "13990",
+    "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/openapi-to-mcp-tools",
+    "price_per_successful_call": "0.01",
+    "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+  },
+  {
+    "name": "API Response Regression Diff",
+    "slug": "api-response-regression",
+    "approved_listing_id": "13990",
+    "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/api-response-regression",
+    "price_per_successful_call": "0.01",
+    "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+  },
+  {
+    "name": "Dataset Quality Report",
+    "slug": "dataset-quality-report",
+    "approved_listing_id": "13989",
+    "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/dataset-quality-report",
+    "price_per_successful_call": "0.01",
+    "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+  },
+  {
+    "name": "Technical Indicator Report",
+    "slug": "technical-indicator-report",
+    "approved_listing_id": "13986",
+    "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/technical-indicator-report",
+    "price_per_successful_call": "0.01",
+    "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+  }
+]

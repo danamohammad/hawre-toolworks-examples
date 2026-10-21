@@ -1,0 +1,32 @@
+{
+  "baseline": {
+    "data": [
+      {
+        "id": 1,
+        "name": "KRD-01",
+        "rate": 1250.0
+      }
+    ],
+    "meta": {
+      "request_id": "abc",
+      "total": 1
+    }
+  },
+  "candidate": {
+    "data": [
+      {
+        "id": 1,
+        "name": "KRD-01",
+        "rate": 1250.4,
+        "operator": "A"
+      }
+    ],
+    "meta": {
+      "request_id": "xyz"
+    }
+  },
+  "ignore_paths": [
+    "meta.request_id"
+  ],
+  "numeric_tolerance": 0.001
+}

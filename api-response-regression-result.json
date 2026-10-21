@@ -1,0 +1,28 @@
+{
+  "responses": 1,
+  "identical": false,
+  "breaking_changes": true,
+  "results": [
+    {
+      "name": "response",
+      "differences": [
+        {
+          "path": "data[0].operator",
+          "kind": "added",
+          "to": "A",
+          "breaking": false
+        },
+        {
+          "path": "meta.total",
+          "kind": "removed",
+          "from": 1,
+          "breaking": true
+        }
+      ],
+      "difference_count": 2,
+      "breaking": true,
+      "identical": false
+    }
+  ],
+  "rules": "removed field / type change / status change / shorter array = breaking; added field = non-breaking"
+}

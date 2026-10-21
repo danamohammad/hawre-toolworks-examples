@@ -1,0 +1,75 @@
+{
+  "spec": {
+    "openapi": "3.0.3",
+    "info": {
+      "title": "Wells API",
+      "version": "1.0"
+    },
+    "servers": [
+      {
+        "url": "https://api.example.com"
+      }
+    ],
+    "paths": {
+      "/wells/{id}": {
+        "get": {
+          "operationId": "getWell",
+          "summary": "Get a well",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/wells": {
+        "post": {
+          "operationId": "createWell",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Well"
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Created"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Well": {
+          "type": "object",
+          "required": [
+            "name"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "depth_m": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

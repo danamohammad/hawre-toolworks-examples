@@ -1,0 +1,85 @@
+{
+  "title": "Wells API",
+  "servers": [
+    "https://api.example.com"
+  ],
+  "tool_count": 2,
+  "tools": [
+    {
+      "name": "getwell",
+      "description": "Get a well",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      },
+      "_http": {
+        "method": "GET",
+        "path": "/wells/{id}",
+        "param_locations": {
+          "id": "path"
+        }
+      }
+    },
+    {
+      "name": "createwell",
+      "description": "POST /wells",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "body": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "depth_m": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "required": [
+          "body"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false
+      },
+      "_http": {
+        "method": "POST",
+        "path": "/wells",
+        "param_locations": {
+          "body": "body"
+        }
+      }
+    }
+  ],
+  "tools_truncated": false,
+  "skipped": [],
+  "file": {
+    "$file": "mcp-tools.json",
+    "mime": "application/json",
+    "bytes": 1444,
+    "sha256": "578209462d27b85caddefa02baccb160be92cab027791dc1a1eb7086de992faa"
+  },
+  "note": "definitions only: the _http block tells an MCP server how to call the API; no requests are made here"
+}

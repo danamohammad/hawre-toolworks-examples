@@ -1,0 +1,58 @@
+{
+  "was_valid": false,
+  "changes": [
+    {
+      "pos": 0,
+      "line": 1,
+      "change": "removed markdown code fence"
+    },
+    {
+      "pos": 5,
+      "line": 1,
+      "change": "quoted unquoted key 'name'"
+    },
+    {
+      "pos": 7,
+      "line": 1,
+      "change": "replaced ' quotes with double quotes"
+    },
+    {
+      "pos": 23,
+      "line": 1,
+      "change": "quoted unquoted key 'active'"
+    },
+    {
+      "pos": 29,
+      "line": 1,
+      "change": "converted True to JSON literal"
+    },
+    {
+      "pos": 36,
+      "line": 1,
+      "change": "quoted unquoted key 'rates'"
+    },
+    {
+      "pos": 49,
+      "line": 1,
+      "change": "removed trailing comma"
+    },
+    {
+      "pos": 52,
+      "line": 1,
+      "change": "removed line comment"
+    },
+    {
+      "pos": 66,
+      "line": 2,
+      "change": "quoted unquoted key 'note'"
+    },
+    {
+      "pos": 72,
+      "line": 2,
+      "change": "added missing closing brace"
+    }
+  ],
+  "change_count": 10,
+  "json": "{\n  \"name\": \"KRD-01\",\n  \"active\": true,\n  \"rates\": [\n    1250,\n    980\n  ],\n  \"note\": \"ok\"\n}",
+  "note": "repairs are syntactic; review the change list before trusting repaired values"
+}
