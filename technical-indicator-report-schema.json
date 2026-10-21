@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "candles": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "array"
+        ]
+      },
+      "minItems": 2,
+      "maxItems": 20000,
+      "description": "OHLCV candles: objects {t,o,h,l,c,v} (or open/high/low/close/volume) or arrays [t,o,h,l,c,v]; t = epoch s/ms or ISO-8601"
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "sma",
+          "ema",
+          "rsi",
+          "macd",
+          "bbands",
+          "atr",
+          "stoch",
+          "obv",
+          "vwap",
+          "adx",
+          "cci",
+          "williams_r",
+          "mfi"
+        ]
+      },
+      "minItems": 1,
+      "description": "Indicators to compute",
+      "default": [
+        "sma",
+        "ema",
+        "rsi",
+        "macd",
+        "bbands",
+        "atr"
+      ]
+    },
+    "settings": {
+      "type": "object",
+      "description": "Optional periods, e.g. {rsi:14, sma:20, macd_fast:12, macd_slow:26, macd_signal:9, bb_period:20, bb_std:2}",
+      "default": {}
+    },
+    "tail": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 500,
+      "description": "Trailing rows of indicator series to return",
+      "default": 20
+    }
+  },
+  "required": [
+    "candles"
+  ],
+  "additionalProperties": false
+}

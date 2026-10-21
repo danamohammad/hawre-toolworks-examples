@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "maxLength": 2000000
+    },
+    "indent": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 8,
+      "default": 2
+    }
+  },
+  "required": [
+    "text"
+  ],
+  "additionalProperties": false
+}

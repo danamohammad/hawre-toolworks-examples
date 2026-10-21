@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "spec": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "include_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 50,
+      "default": []
+    },
+    "max_tools": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000,
+      "default": 200
+    }
+  },
+  "required": [
+    "spec"
+  ],
+  "additionalProperties": false
+}

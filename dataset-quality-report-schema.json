@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "rows": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object"
+      },
+      "maxItems": 100000,
+      "default": null
+    },
+    "csv": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 8388608,
+      "default": null
+    },
+    "file": {
+      "type": "object",
+      "description": "File input: exactly one of b64 (base64 bytes) or url (public http/https URL fetched by the service).",
+      "properties": {
+        "b64": {
+          "type": "string",
+          "description": "Base64-encoded file bytes"
+        },
+        "url": {
+          "type": "string",
+          "maxLength": 2048,
+          "description": "Public http(s) URL of the file"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "Original filename (optional)"
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1,
+      "default": null
+    },
+    "sheet": {
+      "type": [
+        "string",
+        "integer",
+        "null"
+      ],
+      "default": null
+    },
+    "top_values": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 50,
+      "default": 5
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

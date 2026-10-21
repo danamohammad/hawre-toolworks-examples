@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "baseline": {
+      "type": [
+        "object",
+        "array"
+      ],
+      "description": "Response body, or [{name, status, headers, body}]"
+    },
+    "candidate": {
+      "type": [
+        "object",
+        "array"
+      ]
+    },
+    "ignore_paths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 200
+      },
+      "maxItems": 100,
+      "description": "e.g. meta.request_id, data[*].updated_at",
+      "default": []
+    },
+    "numeric_tolerance": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Relative tolerance for numbers",
+      "default": 0
+    },
+    "unordered_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 100,
+      "default": []
+    },
+    "compare_headers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 30,
+      "default": []
+    }
+  },
+  "required": [
+    "baseline",
+    "candidate"
+  ],
+  "additionalProperties": false
+}

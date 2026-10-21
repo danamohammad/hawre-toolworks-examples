@@ -6,7 +6,9 @@
     "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/json-repair",
     "price_per_successful_call": "0.01",
     "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
-    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read",
+    "marketplace_url": "https://www.okx.ai/agents/13990",
+    "public_page_verified_http": 200
   },
   {
     "name": "OpenAPI to MCP Tool Defs",
@@ -15,7 +17,9 @@
     "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/openapi-to-mcp-tools",
     "price_per_successful_call": "0.01",
     "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
-    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read",
+    "marketplace_url": "https://www.okx.ai/agents/13990",
+    "public_page_verified_http": 200
   },
   {
     "name": "API Response Regression Diff",
@@ -24,7 +28,9 @@
     "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/api-response-regression",
     "price_per_successful_call": "0.01",
     "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
-    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read",
+    "marketplace_url": "https://www.okx.ai/agents/13990",
+    "public_page_verified_http": 200
   },
   {
     "name": "Dataset Quality Report",
@@ -33,7 +39,9 @@
     "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/dataset-quality-report",
     "price_per_successful_call": "0.01",
     "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
-    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read",
+    "marketplace_url": "https://www.okx.ai/agents/13989",
+    "public_page_verified_http": 200
   },
   {
     "name": "Technical Indicator Report",
@@ -42,6 +50,8 @@
     "endpoint": "https://a2mcp-tools.danamohammadkhidhir.workers.dev/v2/technical-indicator-report",
     "price_per_successful_call": "0.01",
     "result_basis": "Local deterministic demonstration of published sample; no real paid replay performed",
-    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read"
+    "public_health_basis": "Fresh unpaid HTTP402 with payment challenge; approval verified through account read",
+    "marketplace_url": "https://www.okx.ai/agents/13986",
+    "public_page_verified_http": 200
   }
 ]
